@@ -1,0 +1,94 @@
+/* Reseteo global */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Configuracion body general */
+body {
+    /* Para el espacio en blanco entre el header y el main */
+    padding-top: 90px;
+    background-color: antiquewhite;
+}
+
+
+/* Estilos header */
+.header__title {
+    text-align: center;
+}
+
+.header__navLogo {
+    width: 80px;
+    margin: auto;
+    position: absolute;
+    top: 1px;
+    left: 30px;
+}
+
+.header__nav {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(101, 86, 68);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Con el fixed va el width para que ocupe todo el ancho */
+    position: fixed;
+    width: 100%;
+
+    /* el top es consecuencia de configurar lo del body. Es para que funcione bien el fixed del nav */
+    top: 0;
+}
+
+.header__list {
+    padding: 1rem;
+    text-align: center;
+}
+
+.header__item {
+    display: inline;
+    padding: 1rem;
+}
+
+.header__link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Estilos main <Contenido Principal>*/ 
+
+.main {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.section {
+    display: inline-block;
+    width: 40rem;
+    margin: 2rem;
+}
+
+.section__articleTitle {
+    border: solid 1px black;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.section__articleText {
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos footer */
+.footer {
+    background-color: rgb(101, 86, 68);
+    padding: 5rem;
+    text-align: center;
+}
+
+.footer__text {
+    color: black;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}

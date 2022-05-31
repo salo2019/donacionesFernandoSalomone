@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__navLogo" src="../assets/logo.png" alt="Logo de la pagina">            
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="../index.html">Inicio</li></a> 
+                <li class="header__item"><a class="header__link" href="../vistas/quienesSomos.html">Quienes somos</a></li>
+                <li class="header__item"><a class="header__link" href="../vistas/centrosDonacion.html">Ver centros de donacion</a></li>
+                <li class="header__item"><a class="header__link" href="../vistas/comoDonar.html">Como donar</a></li>
+                <li class="header__item"><a class="header__link" href="../vistas/contacto.html">Contacto</a></li>
+                <li class="header__item"><a class="header__link" href="../vistas/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <fieldset class="fieldset">
+            <legend class="fieldset__legend">Formulario de Registro</legend>
+            <form class="fieldset__form" action="" method="get">
+                <div class="fieldset__item">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" name="nombres" id="nombres">
+                </div>
+                <div class="fieldset__item">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+                <div class="fieldset__item">
+                    <label for="telefono">Numero de Telefono</label>
+                    <input type="number" name="telefono" id="telefono">
+                </div>
+                <div class="fieldset__item">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="fieldset__item">
+                    <fieldset class="fieldset">
+                        <legend class="fieldset__legend">Si usted quiere <span>colaborar</span> eliga entre las opciones</legend>
+                        <div class="fieldset__option">
+                            <label for="darDinero">Quiero donar dinero</label>
+                            <input type="checkbox" name="darDinero" id="darDinero">
+                        </div>
+                        <div class="fieldset__option">
+                            <label for="darAlimento">Quiero donar alimentos</label>
+                            <input type="checkbox" name="darAlimento" id="darAlimento">
+                        </div>
+                        <div class="fieldset__option">
+                            <label for="darRopa">Quiero donar ropa</label>
+                            <input type="checkbox" name="darRopa" id="darRopa">
+                        </div>    
+                        <div class="fieldset__option">
+                            <label for="ayudante">Quiero ser ayudante</label>
+                            <input type="checkbox" name="ayudante" id="ayudante">
+                        </div>    
+                    </fieldset>
+                </div>
+                <div class="fieldset__item">
+                    <fieldset class="fieldset">
+                        <legend class="fieldset__legend">Si usted necesita <span>ayuda</span> eliga entre las opciones</legend>
+                        <div class="fieldset__option">
+                            <label for="necesitoDinero">Necesito dinero</label>
+                            <input type="checkbox" name="necesitoDinero" id="necesitoDinero">
+                        </div>
+                        <div class="fieldset__option">
+                            <label for="necesitoAlimento">Necesito alimentos</label>
+                            <input type="checkbox" name="necesitoAlimento" id="necesitoAlimento">
+                        </div>
+                        <div class="fieldset__option">
+                            <label for="necesitoRopa">Necesito ropa</label>
+                            <input type="checkbox" name="necesitoRopa" id="necesitoRopa">
+                        </div>
+                        <div class="fieldset__option">    
+                            <label for="necesitoMedicamento">Necesito medicamentos</label>
+                            <input type="checkbox" name="necesitoMedicamento" id="necesitoMedicamento">
+                        </div>    
+                    </fieldset>
+                </div>                
+                <div class="fieldset__item">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="fieldset__item">
+                    <input class="fieldset__itemBoton" type="submit" value="Registrar">
+                    <input class="fieldset__itemBoton" type="reset" value="Reset">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">
+            © Copyright 2022 Donaciones Argentinas. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
