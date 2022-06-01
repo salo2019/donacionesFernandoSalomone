@@ -4,41 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/comoDonar.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Donar</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="header__nav">
-            <img class="header__navLogo" src="../assets/logo.png" alt="Logo de la pagina">            
+            <div class="header__navLogoContain">
+                <img class="header__navLogo" src="../assets/trabajo-en-equipo.png" alt="Logo de la pagina">            
+            </div>
             <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="../index.html">Inicio</li></a> 
-                <li class="header__item"><a class="header__link" href="../vistas/quienesSomos.html">Quienes somos</a></li>
-                <li class="header__item"><a class="header__link" href="../vistas/centrosDonacion.html">Ver centros de donacion</a></li>
-                <li class="header__item"><a class="header__link" href="../vistas/comoDonar.html">Como donar</a></li>
-                <li class="header__item"><a class="header__link" href="../vistas/contacto.html">Contacto</a></li>
-                <li class="header__item"><a class="header__link" href="../vistas/login.html">Login</a></li>
+                <li class="header__item"><a class="header__link" href="./centrosDonacion.html">Centros de donación</a></li>
+                <li class="header__item"><a class="header__link" href="./comoDonar.html">Como donar</a></li>
+                <li class="header__item"><a class="header__link" href="./contacto.html">Contacto</a></li>
+                <li class="header__item"><a class="header__link" href="./login.html">Login</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section class="section">
-            <article class="section__article">
-            <h3 class="section__articleTitle">Ver la siguiente explicacion</h3>
-            <p class="section__articleText">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, facilis enim, 
-                minus quos consequuntur pariatur tenetur ad non alias placeat voluptatibus, amet aliquid!
-                Omnis veniam quo fugit quia repellat facere.
+        <section class="sectionPublicacion">
+            <h3 class="sectionPublicacion__title">Ver la siguiente explicacion</h3>
+            <p class="sectionPublicacion__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui corrupti sunt possimus distinctio dolor
+                aliquam blanditiis repellendus iusto ea, aperiam tempore expedita dolore cumque amet dignissimos ad voluptatem.
+                Nobis?.
             </p>
-            <video  src="../assets/donar.mp4" controls></video>
-            </article>
+            <div class="sectionPublicacion__videoContainer">
+                <video class="sectionPublicacion__video" src="../assets/donar.mp4" controls></video>
+            </div>
         </section>
     </main>
+
     <footer class="footer">
-        <p class="footer__text">
-            © Copyright 2022 Donaciones Argentinas. Todos los derechos reservados.
-        </p>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <h4 class="footer__titleH4">INFORMACIÓN</h4>
+                <li><a class="footer__item" href="#">Miembros</a></li>
+                <li><a class="footer__item" href="#">Terminos y condiciones</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <h4 class="footer__titleH4">COMUNIDAD</h4>
+                <div class="footer__comunidad">
+                    <li><a class="footer__item" href="http://facebook.com" target="_blank"><img src="../assets/facebook.png" alt="Imagen de Facebook" class="footer__logoRedSocial"></a></li>
+                    <li><a class="footer__item" href="http://youtube.com" target="_blank"><img src="../assets/youtube.png" alt="Imagen de Youtube" class="footer__logoRedSocial"></a></li>
+                    <li><a class="footer__item" href="#" target="_blank"><img src="../assets/whatsapp.png" alt="Imagen de Whatsapp" class="footer__logoRedSocial footer__logoRedSocial--margin"></a></li>
+                </div>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

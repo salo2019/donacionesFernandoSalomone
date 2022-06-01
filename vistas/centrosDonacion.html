@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/centrosDonacion.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Centros</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="header__nav">
-            <img class="header__navLogo" src="../assets/logo.png" alt="Logo de la pagina">            
+            <div class="header__navLogoContain">
+                <img class="header__navLogo" src="../assets/trabajo-en-equipo.png" alt="Logo de la pagina">            
+            </div>
             <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="../index.html">Inicio</li></a> 
-                <li class="header__item"><a class="header__link" href="../vistas/quienesSomos.html">Quienes somos</a></li>
-                <li class="header__item"><a class="header__link" href="../vistas/centrosDonacion.html">Ver centros de donacion</a></li>
+                <li class="header__item"><a class="header__link" href="../vistas/centrosDonacion.html">Centros de donación</a></li>
                 <li class="header__item"><a class="header__link" href="../vistas/comoDonar.html">Como donar</a></li>
                 <li class="header__item"><a class="header__link" href="../vistas/contacto.html">Contacto</a></li>
                 <li class="header__item"><a class="header__link" href="../vistas/login.html">Login</a></li>
@@ -23,41 +24,37 @@
     </header>
 
     <main class="main">
-        <section class="section">
-            <h2 class="section__title">Centros de donación</h2>
-            <article class="section__article">
-                <h3 class="section__articleTitle">Centro 1</h3>
-                <p class="section__articleText">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe debitis quibusdam amet incidunt molestiae culpa. 
-                    Deleniti blanditiis perferendis cum et ea, modi id ipsam natus accusantium explicabo. Similique, molestias.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, officia. Asperiores, labore accusantium impedit natus esse tenetur est, dolore voluptates illo quam minus. Nihil repudiandae natus aliquam nulla soluta ut.
-                </p>
-            </article>
-            <article class="section__article">
-                <h3 class="section__articleTitle">Centro 2</h3>
+        <section class="main__section main__sectionCentrosDonacion">
+            <article class="section__articleCentros">
+                <h3 class="section__articleTitleCentros">Centro 1</h3>
                 <p class="section__articleText">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe debitis quibusdam amet incidunt molestiae culpa. 
                     Deleniti blanditiis perferendis cum et ea, modi id ipsam natus accusantium explicabo. Similique, molestias.
                 </p>
             </article>
-            <article class="section__article">
-                <h3 class="section__articleTitle">Centro 3</h3>
+            <article class="section__articleCentros">
+                <h3 class="section__articleTitleCentros">Centro 2</h3>
                 <p class="section__articleText">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe debitis quibusdam amet incidunt molestiae culpa. 
                     Deleniti blanditiis perferendis cum et ea, modi id ipsam natus accusantium explicabo. Similique, molestias.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsam veniam. Natus, aliquam. Veritatis temporibus accusantium odio nihil, pariatur delectus, deserunt recusandae illum saepe, repellendus molestiae doloribus quibusdam excepturi quas?
                 </p>
             </article>
-            <article class="section__article">
-                <h3 class="section__articleTitle">Centro 4</h3>
+            <article class="section__articleCentros">
+                <h3 class="section__articleTitleCentros">Centro 3</h3>
                 <p class="section__articleText">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe debitis quibusdam amet incidunt molestiae culpa. 
                     Deleniti blanditiis perferendis cum et ea, modi id ipsam natus accusantium explicabo. Similique, molestias.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nihil. Sequi, placeat. Aliquid consectetur sint culpa sequi dolor, amet dicta repellat sunt similique perferendis autem, expedita provident facilis voluptate optio?
                 </p>
             </article>
-            <article class="section__article">
-                <h3 class="section__articleTitle">Centro 5</h3>
+            <article class="section__articleCentros">
+                <h3 class="section__articleTitleCentros">Centro 4</h3>
+                <p class="section__articleText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe debitis quibusdam amet incidunt molestiae culpa. 
+                    Deleniti blanditiis perferendis cum et ea, modi id ipsam natus accusantium explicabo. Similique, molestias.
+                </p>
+            </article>
+            <article class="section__articleCentros">
+                <h3 class="section__articleTitleCentros">Centro 5</h3>
                 <p class="section__articleText">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe debitis quibusdam amet incidunt molestiae culpa. 
                     Deleniti blanditiis perferendis cum et ea, modi id ipsam natus accusantium explicabo. Similique, molestias.
@@ -66,9 +63,22 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="footer__text">
-            © Copyright 2022 Donaciones Argentinas. Todos los derechos reservados.
-        </p>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <h4 class="footer__titleH4">INFORMACIÓN</h4>
+                <li><a class="footer__item" href="#">Miembros</a></li>
+                <li><a class="footer__item" href="#">Terminos y condiciones</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <h4 class="footer__titleH4">COMUNIDAD</h4>
+                <div class="footer__comunidad">
+                    <li><a class="footer__item" href="http://facebook.com" target="_blank"><img src="../assets/facebook.png" alt="Imagen de Facebook" class="footer__logoRedSocial"></a></li>
+                    <li><a class="footer__item" href="http://youtube.com" target="_blank"><img src="../assets/youtube.png" alt="Imagen de Youtube" class="footer__logoRedSocial"></a></li>
+                    <li><a class="footer__item" href="#" target="_blank"><img src="../assets/whatsapp.png" alt="Imagen de Whatsapp" class="footer__logoRedSocial footer__logoRedSocial--margin"></a></li>
+                </div>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

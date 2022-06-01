@@ -1,0 +1,606 @@
+/* Reseteo global */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header header header"
+                         "sectionHero sectionHero sectionHero"
+                         "main main main"
+                         "footer footer footer";   
+}
+
+
+/* Estilos Generales */
+
+.fieldset__itemBoton--tamano {
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+
+
+/* -------------- HEADER ----------------- */
+
+.header{
+    grid-area: header;
+    background-color: #1D262D;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 2rem;
+    
+    /* Le cambio los valores por defecto a column y wrap     flex-flow: column wrap; 
+*/   
+    
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__item {
+    margin: 0 1rem;
+}
+
+.header__link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header__navLogoContain {
+    width: 5rem;
+}
+
+.header__navLogo {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+    object-fit: cover;
+}
+
+
+/* -------------- HERO ----------------- */
+
+.sectionHero{
+    grid-area: sectionHero;
+}
+
+.sectionHero__imageContainer {
+    width: 100%;
+}
+
+.sectionHero__image {
+    width: 100%; 
+    object-fit: cover;  
+}
+
+
+
+/* -------------- MAIN -Contenido principal- Todas las vistas ----------------- */
+
+.main {
+    grid-area: main;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(3, 27rem);
+    grid-template-rows: repeat(2, auto);
+    
+    /*Separacion entre filas y columnas */
+    grid-gap: 1rem;
+
+    /*Centro horizontalmente*/
+    justify-content: center;
+
+    /*Centro Verticalmente*/
+    align-items: center;
+
+    margin: 5rem 0;
+
+}
+
+
+/*----------------- INDEX.HTML ----------------- */
+.section__article {
+    display: flex;
+
+    /*Le cambio el por defecto para que quede horizontal y no vertical*/
+    flex-direction: column;
+
+    /*lo paso a wrap porque sino esta en column y no alinea en horizontal*/
+    flex-wrap: wrap;
+
+    /* las dos lineas de arriba se soluciona todo junto con:   
+        flex-flow: column wrap; 
+    */
+
+    align-items: center;
+
+    height: auto;
+    border: 1px solid black;
+    padding: 0 1rem;
+}
+
+.section__articleTitle {
+    padding: 1rem 0;
+}
+
+/*Fijo un tamaño estandar para las imagenes*/
+.section__articleImgContainer {
+    height: 20rem;
+}
+
+.section__articleImg {
+    /*acomodo las imagenes para que ocupen todo su espacio*/
+    height: 100%;
+    width: 100%;   
+}
+
+.section__articleText {
+    padding: 1rem 0;
+}
+
+/*----- COMODONAR.HTML ----*/
+
+.sectionPublicacion{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.sectionPublicacion__video{
+    height: 100%;
+    width: 100%;
+}
+.sectionPublicacion__paragraph{
+    padding: 0.7rem 0 1rem 0;
+    width: 60%;
+}
+
+/*----------- CENTROSDEDONACION.HTML ---------*/
+.section__articleCentros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 0 1rem;
+    height: 20rem;
+    border: 1px solid black;
+
+}
+
+
+/* -------------- CONTACTO.HTML ----------------- */
+
+.fieldsetContacto {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.fieldset__legend {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fieldset__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input, textarea {
+    width: 100%;;
+}
+
+.fieldset__formulario{
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+    padding: 3rem 3rem;
+
+    display : grid;
+
+    /* agrego separacion */
+    grid-gap: 2rem;
+
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.fieldset__item--textarea{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+}
+
+.fieldset__itemBoton {
+    display: flex;
+    padding: 2rem 0;
+    grid-column: 1 / span 2;
+}
+
+/* -------------- LOGIN.HTML ----------------- */
+
+.fieldsetLogin {
+    display: flex;
+    justify-content: center;
+    padding: 3rem; 
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+}
+
+.item__input{
+    width: 20rem;
+}
+
+.fieldset__itemBotonLogin{
+    color: white;
+    background-color: blue;
+    padding: 0.5rem;   
+}
+
+.fieldset__formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldset__registrarse {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+
+/* -------------- REGISTRARSE.HTML ----------------- */
+
+.mainRegistrarse {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+}
+
+.fieldset__formularioRegistro {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    padding: 1rem 1rem;
+}
+
+.fieldset__item {
+    padding: 1rem 1rem;
+}
+
+.fieldset__itemDonar {
+    grid-column: 1 / span 2;
+    padding: 2rem 0;
+}
+
+.fieldset__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.fieldset__itemBotonRegistro {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / span 2;
+}
+
+.itemBoton__registro {
+    margin: 0 1rem;
+    padding:1rem 1rem;
+}
+
+/* -------------- FOOTER ----------------- */
+
+.footer {
+    grid-area: footer;
+    padding: 3rem 0;
+    background-color: #1D262D;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.footer__list {
+    list-style-type: none;
+}
+
+.footer__list a {
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #869FB2;
+}
+
+.footer__list a:hover {
+    color: white;
+}
+
+.footer__titleH4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.footer__comunidad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logoRedSocial {
+    width: 2.5rem;
+}
+
+.footer__logoRedSocial:hover {
+    box-shadow: 0 0 0.1rem 0 #9BA5B1;
+}
+
+.footer__item {
+    padding: 0 0.5rem;
+}
+
+
+
+
+/*-------------- Configuracion Responsive ------------- */
+
+/* Header Responsive */
+@media screen and (max-width: 930px){
+    .header__nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        padding: 0rem;
+    }
+
+    .header__navLogo {
+        padding: 0;
+    }
+
+    .header__navLogoContain {
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 794px){
+    .header__nav{
+        height: 20rem;
+    }
+    .header__navLogoContain {
+        width: 5rem;
+    }
+    .header__list{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header__nav{
+        height: 27rem;
+    }
+    .header__navLogoContain {
+        width: 5rem;
+        padding-bottom: 1rem;
+    }
+    .header__list{
+        flex-flow: column;
+        align-items: center;
+        font-size: 2rem;
+        padding: 0.5rem 0;
+    }
+}
+
+
+/* Contenido principal INDEX Responsive */
+@media screen and (max-width: 1264px){
+    
+    .main__sectionIndex {
+        grid-template-columns: repeat(2, 27rem);
+  
+    }
+}
+
+@media screen and (max-width: 886px){
+    
+    .main__sectionIndex {
+        grid-template-columns: 27rem;   
+    }
+}
+
+@media screen and (max-width: 449px){
+    
+    .main__sectionIndex {
+        display: flex;
+        flex-direction: column;   
+    }
+    .section__articleImgContainer {
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 280px){
+
+    .section__articleImgContainer {
+        height: 9rem;
+    }
+}
+
+
+/* ----- CONTACTO.HTML Responsive -------- */
+
+@media screen and (max-width: 880px){
+
+    .fieldset__formulario{
+        width  : 840px;
+        height : auto;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .fieldset__itemBoton--tamano {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 665px){
+    
+    .fieldset__formulario{
+        width  : 440px;
+        height : auto;
+    }
+
+    .fieldset__legend {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 458px){
+    
+    .fieldset__item{
+        grid-column: 1 / span 2; 
+    }
+
+    .fieldset__formulario{
+        width  : 400px;
+        height : auto;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    .fieldset__formulario{
+        width  : 250px;
+        height : auto;
+    }
+
+
+    .fieldset__itemBoton {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        width: auto;
+    }
+
+    .fieldset__legend {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+/* --------- LOGIN Responsive  ---------- */
+@media screen and (max-width: 423px){  
+    .item__input{
+        width: auto;
+    }
+    
+    .fieldset__itemBotonLogin{
+        color: white;
+        background-color: blue;
+        padding: 0.5rem;   
+    }
+    
+    .fieldset__formLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fieldset__registrarse {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+}
+
+
+/* -------  CentrosDonacion Responsive ----- */
+@media screen and (max-width: 1264px){
+    
+    .main__sectionCentrosDonacion {
+        grid-template-columns: repeat(2, 27rem);
+  
+    }
+}
+
+@media screen and (max-width: 886px){
+    
+    .main__sectionCentrosDonacion {
+        grid-template-columns: 27rem;       
+    }
+}
+
+@media screen and (max-width: 449px){
+    
+    .main__sectionCentrosDonacion {
+        display: flex;
+        flex-direction: column;   
+    }
+}
+
+@media screen and (max-width: 280px){
+    
+    .section__articleText {
+        height: 9rem;
+    }    
+}    
+
+
+/* Footer Responsive */
+@media screen and (max-width: 449px){
+    
+    .footer__nav {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer__list {
+        padding: 1rem 0;
+    }
+
+}
