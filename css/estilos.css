@@ -324,7 +324,10 @@ input, textarea {
 .footer {
     grid-area: footer;
     padding: 3rem 0;
-    background-color: #1D262D;
+
+    /*Aplico el gradiente al footer*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7682423311121324) 0%, rgba(9,9,121,1) 29%, rgba(5,100,181,1) 59%, rgba(43,81,97,1) 81%, rgba(0,212,255,1) 100%);
 }
 
 .footer__nav {
