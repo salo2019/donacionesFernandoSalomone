@@ -36,12 +36,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem 0 2rem;
-    
-    /* Le cambio los valores por defecto a column y wrap     flex-flow: column wrap; 
-*/   
-    
+    padding: 0 1rem 0 2rem;       
 }
+
+
+/*Aplicando transicion al Logo*/
+.header__navLogo {
+    transform: rotate(360deg);
+    transition: transform 5s;
+}
+
+.header__navLogo:hover {
+    transform: rotate(1deg);
+}
+/*-- Fin transicion-- */
+
 
 .header__list {
     display: flex;
@@ -59,7 +68,19 @@
     color: white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    /* Agregando transicion */
+    transition: color 2s;
+    transition: font-size 1s;
 }
+
+/*--Para transicion---*/
+.header__link:hover{
+    color:#9BA5B1;
+    font-size: 23px;
+}
+/*--Fin transicion--*/
+
 
 .header__navLogoContain {
     width: 5rem;
@@ -136,7 +157,16 @@
     height: auto;
     border: 1px solid black;
     padding: 0 1rem;
+
+    /*Agrego una transicion*/
+    transition: border 0.2s;
 }
+
+/*-- Para transicion --*/
+.section__article:hover{
+    border: 2px solid red; 
+}
+/*-- Fin transicion --*/
 
 .section__articleTitle {
     padding: 1rem 0;
