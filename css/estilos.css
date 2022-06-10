@@ -28,7 +28,7 @@
 /* -------------- HEADER ----------------- */
 
 .header{
-    grid-area: header;
+    /* grid-area: header; */
     background-color: #1D262D;
 }
 
@@ -51,20 +51,22 @@
 }
 /*-- Fin transicion-- */
 
-
-.header__list {
+/* no se usa */
+.header__list { 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
 
+/* Se usa */
 .header__item {
     margin: 0 1rem;
 }
 
+/* Se usa */
 .header__link {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,14 +85,15 @@
 
 
 .header__navLogoContain {
-    width: 5rem;
+    width: auto;
 }
 
 .header__navLogo {
-    height: 100%;
+    /* height: 100%;
     width: 100%;
     padding: 1rem 0;
-    object-fit: cover;
+    object-fit: cover; */
+    width: 5rem;
 }
 
 
@@ -113,6 +116,7 @@
 
 /* -------------- MAIN -Contenido principal- Todas las vistas ----------------- */
 
+/* no se usa en index */
 .main {
     grid-area: main;
     height: auto;
@@ -139,53 +143,52 @@
 
 
 /*----------------- INDEX.HTML ----------------- */
-.section__article {
-    display: flex;
+/* .section__article { */
+    /* display: flex; */
 
     /*Le cambio el por defecto para que quede horizontal y no vertical*/
-    flex-direction: column;
+    /* flex-direction: column; */
 
     /*lo paso a wrap porque sino esta en column y no alinea en horizontal*/
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     /* las dos lineas de arriba se soluciona todo junto con:   
         flex-flow: column wrap; 
     */
 
-    align-items: center;
+    /* align-items: center;
 
     height: auto;
     border: 1px solid black;
-    padding: 0 1rem;
+    padding: 0 1rem; */
 
     /*Agrego una transicion*/
-    transition: border 0.2s;
-}
+    /* transition: border 0.2s; */
+
 
 /*-- Para transicion --*/
-.section__article:hover{
-    border: 2px solid red; 
-}
+/* .section__article:hover{ */
+    /* border: 2px solid red; 
+} */
 /*-- Fin transicion --*/
 
-.section__articleTitle {
+/* .section__articleTitle {
     padding: 1rem 0;
-}
+} */
 
 /*Fijo un tamaño estandar para las imagenes*/
-.section__articleImgContainer {
+/* .section__articleImgContainer {
     height: 20rem;
-}
+} */
 
 .section__articleImg {
-    /*acomodo las imagenes para que ocupen todo su espacio*/
     height: 100%;
     width: 100%;   
 }
 
-.section__articleText {
+/* .section__articleText {
     padding: 1rem 0;
-}
+} */
 
 /*----- COMODONAR.HTML ----*/
 
@@ -229,6 +232,7 @@
     width: 100%;
     height: 100%;
     margin: 2rem 0;
+    margin-bottom: 13rem;
 }
 
 .fieldset__legend {
@@ -415,7 +419,7 @@ input, textarea {
 /*-------------- Configuracion Responsive ------------- */
 
 /* Header Responsive */
-@media screen and (max-width: 930px){
+/* @media screen and (max-width: 930px){
     .header__nav{
         flex-direction: column;
         justify-content: center;
@@ -459,11 +463,11 @@ input, textarea {
         font-size: 2rem;
         padding: 0.5rem 0;
     }
-}
+} */
 
 
 /* Contenido principal INDEX Responsive */
-@media screen and (max-width: 1264px){
+/* @media screen and (max-width: 1264px){
     
     .main__sectionIndex {
         grid-template-columns: repeat(2, 27rem);
@@ -494,7 +498,7 @@ input, textarea {
     .section__articleImgContainer {
         height: 9rem;
     }
-}
+} */
 
 
 /* ----- CONTACTO.HTML Responsive -------- */
