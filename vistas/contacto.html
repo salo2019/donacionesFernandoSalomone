@@ -41,33 +41,35 @@
         </nav>
     </header>
 
-    <main>
-        <fieldset class="fieldsetContacto">
-            <legend class="fieldset__legend">Formulario de Contacto</legend>
-            <form class="fieldset__formulario" action="" method="get">
-                <div class="fieldset__item">
-                    <label for="name">Nombres</label>
-                    <input type="text" name="name" id="name" required>
+    <main class="">
+        <fieldset class="container">
+            <form class="row g-3 p-4" method="get">
+                <legend class="text-center">Formulario de Contacto</legend>
+                <div class="col-md-6">
+                    <label for="inputNombres" class="form-label">Nombres</label>
+                    <input type="text" name="inputNombres" class="form-control" id="inputNombres" placeholder="" required>
                 </div>
-                <div class="fieldset__item">
-                    <label for="apellido">Apellidos</label>
-                    <input type="text" name="apellido" id="apellido">
+                <div class="col-md-6">
+                    <label for="inputApellidos" class="form-label">Apellidos</label>
+                    <input type="text" name="inputApellidos" class="form-control" id="inputApellidos" placeholder=""
+                        required>
                 </div>
-                <div class="fieldset__item">
-                    <label for="telefono">Telefono</label>
-                    <input type="number" name="telefono" id="telefono">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" name="inputEmail4" class="form-control" id="inputEmail4" required>
                 </div>
-                <div class="fieldset__item">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Telefono</label>
+                    <input type="number" name="inputPhone" class="form-control" id="inputPhone"
+                        placeholder="Codigo de area sin 0 / numero sin 15">
                 </div>
-                <div class="fieldset__item--textarea">
-                    <label for="mensaje">Mensaje</label> <br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                <div class="col-md-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" name="exampleFormControlTextarea1" id="exampleFormControlTextarea1"
+                        rows="3" required></textarea>
                 </div>
-                <div class="fieldset__itemBoton">
-                    <input class="fieldset__itemBoton--tamano" type="submit" value="Enviar">
-                    <input class="fieldset__itemBoton--tamano" type="reset" value="Reset">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
             </form>
         </fieldset>
