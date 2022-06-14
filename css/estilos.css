@@ -71,6 +71,11 @@
     width: 100%;   
 }
 
+/* Corrigiendo tamano de imagenes en Carousel en CENTROS DE DONACION */
+.carousel-inner img {
+    max-height: 700px;
+}
+
 
 /* -------------- FOOTER ----------------- */
 
