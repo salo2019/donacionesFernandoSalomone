@@ -45,46 +45,45 @@
   border: 0.1rem solid rgba(0, 0, 0, 0.5); }
 
 /* -------------- FOOTER ----------------- */
+/*Para utilizacion de extend*/
+.fuente, .footer__titleH4, .footer__item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
 .footer {
   padding: 3rem 0;
   background: #020024;
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.768242) 0%, #090979 29%, #0564b5 59%, #2b5161 81%, #00d4ff 100%); }
-  .footer .footer__nav {
+  .footer__nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     align-items: flex-start; }
-  .footer .footer__list {
+    @media screen and (max-width: 449px) {
+      .footer__nav {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; } }
+  .footer__list {
     list-style-type: none; }
-  .footer .footer__titleH4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    @media screen and (max-width: 449px) {
+      .footer__list {
+        padding: 1rem 0; } }
+  .footer__titleH4 {
     color: white;
     padding: 0.5rem 0; }
-  .footer a {
+  .footer__item {
+    padding: 0 0.5rem;
     text-decoration: none;
     line-height: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 0.8rem;
     color: #869FB2; }
-  .footer a:hover {
+  .footer__item:hover {
     color: white; }
-  .footer .footer__item {
-    padding: 0 0.5rem; }
-  .footer .footer__comunidad {
+  .footer__comunidad {
     display: flex;
     flex-wrap: wrap; }
-  .footer .footer__logoRedSocial {
+  .footer__logoRedSocial {
     width: 2.5rem; }
-  .footer .footer__logoRedSocial:hover {
+  .footer__logoRedSocial:hover {
     box-shadow: 0 0 0.1rem 0 #9BA5B1; }
-
-/* Footer Responsive */
-@media screen and (max-width: 449px) {
-  .footer__nav {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto; }
-  .footer__list {
-    padding: 1rem 0; } }

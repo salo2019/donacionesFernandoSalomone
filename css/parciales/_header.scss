@@ -1,0 +1,33 @@
+@import "../parciales/mapas";
+
+.header{
+    background-color:map-get($colores, colorGrisEspecial);
+
+    &__navLogo {
+        width: 5rem;
+        transform: rotate(360deg);
+        transition: transform 5s;
+    }
+    
+    &__navLogo:hover {
+        transform: rotate(1deg);
+    }    
+    
+    &__item {
+        margin: 0 1rem;
+    }
+    
+    &__link {
+        color: map-get($colores, colorBlanco);
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        transition: color 2s;
+        transition: font-size 1s;
+    }
+    
+    &__link:hover{
+        color:map-get($colores, colorGrisTopo);
+        font-size: 23px;
+    }
+}
