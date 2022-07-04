@@ -7,25 +7,11 @@
 /* -------------- HERO ----------------- */
 @import "../css/parciales/hero";
 
-
-/* Imagen de articulos MAIN*/
-.section__articleImg {
-    height: 100%;
-    width: 100%;   
-}
+/* Configuracion de Imagen articulos INDEX */
+@import "../css/parciales/articleImg";
 
 /* Corrigiendo tamano de imagenes en Carousel en CENTROS DE DONACION */
-.carousel-inner {
-    img {
-        max-height: 700px;
-    }
-}
-
-.carousel-caption--background {
-    background-color: rgba(237, 222, 222, 0.5);
-    border: 0.1rem solid rgba(0, 0, 0, 0.5);
-}
-
+@import "../css/parciales/carousel";
 
 /* -------------- FOOTER ----------------- */
 @import "../css/parciales/footer";
