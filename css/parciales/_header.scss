@@ -26,7 +26,7 @@
 
         //transiciones
         transition: color 1s;
-        transition: border-radius 0.9s;
+        //transition: border-radius 0.9s;
         transition: background-color 0.9s;
     }
 
@@ -35,6 +35,6 @@
         //cambio para transiciones
         color:map-get($colores, colorNegro);
         background-color: map-get($colores, colorGrisTopo);
-        border-radius: 10px;
+        //border-radius: 10px;
     }
 }

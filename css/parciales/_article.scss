@@ -8,6 +8,16 @@
     border: rgb(250, 250, 250) 0.2em solid;
    }
    
-   .articleContainer:hover {
+.articleContainer:hover {
     border: #006fff 0.2em solid;
-   }
+}
+
+.section__articleImg {
+    height: 190px;
+    width: 100%;   
+}
+   
+.article-parrafo {
+    height: 4rem;
+}
+
