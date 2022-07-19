@@ -51,7 +51,11 @@
   width: 100%; }
 
 .article-parrafo {
-  height: 4rem; }
+  height: 4rem;
+  overflow: auto; }
+
+.article-title {
+  height: 3rem; }
 
 /* Corrigiendo tamano de imagenes en Carousel en CENTROS DE DONACION */
 .carousel-inner img {
